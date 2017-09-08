@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "es2015",
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7"],
+        "ie9": true
+      },
+      "uglify": true
+    }]
+  ],
+  "plugins": [
+     "add-module-exports",
+     "syntax-async-functions",
+     "transform-regenerator",
+     "dynamic-import-webpack",
+     "istanbul"
+   ],
+   "comments": false
+}
