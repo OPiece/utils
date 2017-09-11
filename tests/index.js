@@ -1,12 +1,12 @@
 import chai from 'chai'
 import sinonChai from 'sinon-chai'
-import Promise from 'nuo'
+// import Promise from 'nuo'
 
 localStorage.clear()
 
 chai.use(sinonChai)
 
-global.Promise = Promise
+// global.Promise = Promise
 global.assert = chai.assert
 global.expect = chai.expect
 
