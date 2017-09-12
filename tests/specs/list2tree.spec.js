@@ -1,5 +1,30 @@
 import list2tree from 'lib/list2tree'
 
+const list = [{
+  id: 1,
+  parentId: 0,
+  value: 1
+}, {
+  id: 2,
+  parentId: 0,
+  value: 2
+}, {
+  id: 3,
+  parentId: 1,
+  value: 3
+}, {
+  id: 4,
+  parentId: 2,
+  value: 4
+}, {
+  id: 5,
+  parentId: 3,
+  value: 5
+}]
+const result = list2tree(list)
+const oneChild = result.find(item => item.id === 1)
+const otherChild = result.find(item => item.id === 2)
+
 describe('list2tree function', () => {
   it('error params', () => {
     expect(list2tree()).to.be.an('array')
@@ -7,31 +32,6 @@ describe('list2tree function', () => {
     expect(list2tree({})).to.be.empty
     expect(list2tree(null)).to.be.empty
   })
-
-  const list = [{
-    id: 1,
-    parentId: 0,
-    value: 1
-  }, {
-    id: 2,
-    parentId: 0,
-    value: 2
-  }, {
-    id: 3,
-    parentId: 1,
-    value: 3
-  }, {
-    id: 4,
-    parentId: 2,
-    value: 4
-  }, {
-    id: 5,
-    parentId: 3,
-    value: 5
-  }]
-  const result = list2tree(list)
-  const oneChild = result.find(item => item.id === 1)
-  const otherChild = result.find(item => item.id === 2)
 
   // describe('Whether the result is correct or not', () => {
   //   beforeEach(() => {
