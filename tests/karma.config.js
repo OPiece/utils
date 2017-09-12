@@ -24,7 +24,7 @@ const karmaConfig = {
   basePath: '../', // project root in relation to bin/karma.js
   files: [
     './node_modules/regenerator-runtime/runtime.js',
-    './node_modules/whatwg-fetch/fetch.js',
+    // './node_modules/whatwg-fetch/fetch.js',
     './node_modules/sinon/pkg/sinon.js',
     {
       pattern: './tests/index.js',
