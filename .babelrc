@@ -5,18 +5,17 @@
     ["env", {
       "modules": false,
       "targets": {
-        "browsers": ["last 2 versions", "safari >= 7"],
-        "ie9": true
+        "ie9": true,
       },
-      "uglify": true
+      "uglify": true,
     }]
   ],
   "plugins": [
-     "add-module-exports",
-     "syntax-async-functions",
-     "transform-regenerator",
-     "dynamic-import-webpack",
-     "istanbul"
+    "add-module-exports",
+    "syntax-dynamic-import",
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "transform-runtime"
    ],
    "comments": false
 }
