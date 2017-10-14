@@ -1,6 +1,6 @@
 {
   "name": "opiece-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "some common methods.",
   "main": "index.js",
   "module": "index.js",
