@@ -18,6 +18,29 @@ npm run test
 
 // list2tree
 import list2tree from 'opiece-utils/lib/list2tree'
+
+// request
+import request from 'opiece-utils/lib/request'
+```
+
+## example
+
+```js
+import request from 'opiece-utils/lib/request'
+
+request(`${url}`, {
+  body: {
+    ...
+  },
+  interceptors: {
+    request: [interceptor, ...],
+    response: [interceptor, ...]
+  }
+}).then(data => {
+  console.log(data)
+}).catch(err => {
+  console.error(err)
+})
 ```
 
 ## LICENSE
