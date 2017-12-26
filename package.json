@@ -1,6 +1,6 @@
 {
   "name": "opiece-utils",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "some common methods.",
   "main": "index.js",
   "module": "index.js",
@@ -52,7 +52,7 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.3.0",
     "eslint-plugin-standard": "^3.0.1",
-    "karma": "^1.7.0",
+    "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-coverage": "^1.1.1",
     "karma-es6-shim": "^1.0.0",
