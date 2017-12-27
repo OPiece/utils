@@ -1,14 +1,13 @@
 # opiece-utils
 
-some common methods
+> some common methods
 
-## Scripts
+## Install
 
-```js
-npm install
+```bash
 
-// test
-npm run test
+$ npm install opiece-utils --save
+
 ```
 
 ## Usage
